@@ -38,14 +38,14 @@
 
 | Technology | Level |
 |:----------:|:-----:|
-| 🟨 JavaScript | ⭐⭐⭐⭐ |
+| 🟨 JavaScript | ⭐⭐⭐⭐⭐|
 | ⚛️ React | ⭐⭐⭐⭐ |
-| 🎨 Tailwind CSS | ⭐⭐⭐⭐ |
+| 🎨 Tailwind CSS | ⭐⭐⭐⭐⭐|
 | 🧠 Redux Toolkit | ⭐⭐⭐ |
-| 🟢 Node.js | ⭐⭐ |
-| 🚂 Express.js | ⭐⭐ |
+| 🟢 Node.js | ⭐ |
+| 🚂 Express.js | ⭐ |
 | 🧭 React Router | ⭐⭐⭐⭐ |
-| 🎨 Figma | ⭐⭐⭐ |
+| 🎨 Figma | ⭐⭐ |
 
 
 
