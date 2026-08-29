@@ -16,12 +16,17 @@ Here are some ideas to get you started:
 
 
 
-
 <h2 align="center">🐍 My Contributions</h2>
 
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/MohammadAmin-1389/MohammadAmin-1389/output/github-snake.svg"
-    alt="GitHub Contribution Snake"
-  />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/MohammadAmin-1389/MohammadAmin-1389/output/github-snake-dark.svg"
+    />
+    <img
+      src="https://raw.githubusercontent.com/MohammadAmin-1389/MohammadAmin-1389/output/github-snake.svg"
+      alt="GitHub Contribution Snake"
+    />
+  </picture>
 </p>
