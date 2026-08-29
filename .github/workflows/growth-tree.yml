@@ -12,8 +12,10 @@ permissions:
 jobs:
   generate-tree:
     runs-on: ubuntu-latest
-env:
+
+    env:
       GROWTH_TREE_TOKEN: ${{ secrets.GROWTH_TREE_TOKEN }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
