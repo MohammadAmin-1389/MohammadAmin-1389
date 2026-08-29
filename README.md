@@ -6,33 +6,46 @@
 </p>
 
 
+
 ## ⚡ Skills & Technologies
 
 <table>
-  <tr>
-    <td align="center">
-      <h3>🧠 Languages</h3>
-      <img src="https://skillicons.dev/icons?i=js,html,css" />
-    </td>
+<tr>
+<td align="center">
 
-    <td align="center">
-      <h3>⚛️ Frontend</h3>
-      <img src="https://skillicons.dev/icons?i=react,redux,tailwind" />
-    </td>
-  </tr>
+### 🧠 Languages
 
-  <tr>
-    <td align="center">
-      <h3>🛠️ Backend</h3>
-      <img src="https://skillicons.dev/icons?i=nodejs,express" />
-    </td>
+<img src="https://skillicons.dev/icons?i=js,html,css" />
 
-    <td align="center">
-      <h3>🔧 Tools</h3>
-      <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
-    </td>
-  </tr>
+</td>
+
+<td align="center">
+
+### ⚛️ Frontend
+
+<img src="https://skillicons.dev/icons?i=react,redux,tailwind" />
+
+</td>
+
+<td align="center">
+
+### 🛠️ Backend
+
+<img src="https://skillicons.dev/icons?i=nodejs,express" />
+
+</td>
+
+<td align="center">
+
+### 🔧 Tools
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
+
+</td>
+</tr>
 </table>
+
+
 
 
 ### 🎯 My Current Stack
