@@ -1,0 +1,37 @@
+name: Update Developer Growth Tree
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-tree:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate growth tree
+        run: node scripts/generate-tree.js
+
+      - name: Commit updated tree
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/growth-tree.svg
+
+          git diff --cached --quiet || git commit -m "Update developer growth tree"
+
+          git push
