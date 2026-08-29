@@ -34,6 +34,20 @@
 
 
 
+### 🎯 My Current Stack
+
+| Technology | Level |
+|:----------:|:-----:|
+| 🟨 JavaScript | ⭐⭐⭐⭐ |
+| ⚛️ React | ⭐⭐⭐⭐ |
+| 🎨 Tailwind CSS | ⭐⭐⭐⭐ |
+| 🧠 Redux Toolkit | ⭐⭐⭐ |
+| 🟢 Node.js | ⭐⭐ |
+| 🚂 Express.js | ⭐⭐ |
+| 🧭 React Router | ⭐⭐⭐⭐ |
+| 🎨 Figma | ⭐⭐⭐ |
+
+
 
 
 <h2 align="center">🐍 My Contributions</h2>
