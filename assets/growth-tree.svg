@@ -5,7 +5,6 @@
   xmlns="http://www.w3.org/2000/svg"
 >
 
-  <!-- Background -->
   <rect
     width="900"
     height="500"
@@ -13,20 +12,45 @@
     fill="#0d1117"
   />
 
-  <!-- Title -->
   <text
     x="450"
-    y="55"
+    y="35"
     text-anchor="middle"
     fill="#ffffff"
-    font-size="30"
+    font-size="28"
     font-family="Arial"
     font-weight="bold"
   >
-    Developer Growth
+    🌱 Developer Growth
   </text>
 
-  <!-- Ground -->
+  
+      <path
+        d="M450 390 L450 250"
+        stroke="#8b5a2b"
+        stroke-width="14"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M450 300 L400 260"
+        stroke="#8b5a2b"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M450 285 L500 245"
+        stroke="#8b5a2b"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+
+      <circle cx="395" cy="255" r="25" fill="#2ea043"/>
+      <circle cx="505" cy="240" r="25" fill="#238636"/>
+      <circle cx="450" cy="220" r="30" fill="#2ea043"/>
+    
+
   <path
     d="M150 405 Q450 375 750 405"
     stroke="#30363d"
@@ -34,60 +58,6 @@
     fill="none"
   />
 
-  <!-- Main trunk -->
-  <path
-    d="M450 395
-       C440 340 445 280 450 220
-       C455 180 450 140 L450 130"
-    stroke="#8b5a2b"
-    stroke-width="16"
-    fill="none"
-    stroke-linecap="round"
-  />
-
-  <!-- Main branches -->
-  <path
-    d="M450 275 L340 200"
-    stroke="#8b5a2b"
-    stroke-width="14"
-    stroke-linecap="round"
-  />
-
-  <path
-    d="M450 250 L560 175"
-    stroke="#8b5a2b"
-    stroke-width="14"
-    stroke-linecap="round"
-  />
-
-  
-      <path
-        d="M450 260
-           L350 190"
-        stroke="#8b5a2b"
-        stroke-width="14"
-        stroke-linecap="round"
-      />
-    
-
-  <!-- Leaves -->
-  <circle cx="330" cy="185" r="20" fill="#238636"/>
-  <circle cx="375" cy="150" r="25" fill="#2ea043"/>
-  <circle cx="425" cy="170" r="20" fill="#238636"/>
-
-  <circle cx="500" cy="145" r="25" fill="#2ea043"/>
-  <circle cx="550" cy="175" r="20" fill="#238636"/>
-
-  
-      <circle
-        cx="350"
-        cy="190"
-        r="20"
-        fill="#2ea043"
-      />
-    
-
-  <!-- Level -->
   <text
     x="450"
     y="440"
@@ -97,10 +67,9 @@
     font-family="Arial"
     font-weight="bold"
   >
-    LEVEL 1
+    LEVEL 1 • Seedling
   </text>
 
-  <!-- Stats -->
   <text
     x="450"
     y="470"
