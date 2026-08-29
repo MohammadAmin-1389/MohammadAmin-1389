@@ -46,6 +46,33 @@ async function getContributions() {
     .totalContributions;
 }
 
+function getAchievements(contributions) {
+  const achievements = [];
+
+  if (contributions >= 1) {
+    achievements.push("🌱 First Commit");
+  }
+
+  if (contributions >= 100) {
+    achievements.push("🔥 100 Contributions");
+  }
+
+  if (contributions >= 500) {
+    achievements.push("⚡ 500 Contributions");
+  }
+
+  if (contributions >= 1000) {
+    achievements.push("🏆 1000 Contributions");
+  }
+
+  if (contributions >= 2000) {
+    achievements.push("💎 2000 Contributions");
+  }
+
+  return achievements;
+}
+
+
 function createTree(contributions) {
   let level = 1;
 
@@ -61,6 +88,8 @@ function createTree(contributions) {
 
   const xp = contributions * 10;
 
+  const achievements = getAchievements(contributions);
+  
   let stage;
   let stageEmoji;
 
@@ -276,7 +305,22 @@ function createTree(contributions) {
       <circle cx="400" cy="80" r="8" fill="#f2cc60"/>
     `;
   }
+let achievementText = "";
 
+achievements.forEach((achievement, index) => {
+  achievementText += `
+    <text
+      x="40"
+      y="${80 + index * 25}"
+      fill="#ffffff"
+      font-size="14"
+      font-family="Arial"
+    >
+      ${achievement}
+    </text>
+  `;
+});
+  
   return `
 <svg
   width="900"
@@ -291,7 +335,7 @@ function createTree(contributions) {
     rx="20"
     fill="#0d1117"
   />
-
+${achievementText}
   <text
     x="450"
     y="35"
