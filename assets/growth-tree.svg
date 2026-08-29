@@ -1,0 +1,100 @@
+<svg
+  width="900"
+  height="450"
+  viewBox="0 0 900 450"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <rect
+    width="900"
+    height="450"
+    rx="20"
+    fill="#0d1117"
+  />
+
+  <text
+    x="450"
+    y="55"
+    text-anchor="middle"
+    fill="#ffffff"
+    font-size="30"
+    font-family="Arial"
+    font-weight="bold"
+  >
+    Developer Growth
+  </text>
+
+  <!-- Ground -->
+  <path
+    d="M180 370 Q450 340 720 370"
+    stroke="#30363d"
+    stroke-width="5"
+    fill="none"
+  />
+
+  <!-- Trunk -->
+  <path
+    d="M450 360
+       C435 310 440 255 450 210
+       C460 165 450 120 450 90"
+    stroke="#8b5a2b"
+    stroke-width="28"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- Left branches -->
+  <path
+    d="M450 250 L340 180"
+    stroke="#8b5a2b"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M450 220 L300 240"
+    stroke="#8b5a2b"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+  <!-- Right branches -->
+  <path
+    d="M450 230 L560 160"
+    stroke="#8b5a2b"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M450 270 L610 230"
+    stroke="#8b5a2b"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+  <!-- Leaves -->
+  <circle cx="300" cy="155" r="38" fill="#238636"/>
+  <circle cx="350" cy="125" r="45" fill="#2ea043"/>
+  <circle cx="400" cy="145" r="40" fill="#238636"/>
+
+  <circle cx="500" cy="125" r="45" fill="#2ea043"/>
+  <circle cx="555" cy="145" r="38" fill="#238636"/>
+  <circle cx="600" cy="190" r="32" fill="#2ea043"/>
+
+  <circle cx="280" cy="235" r="30" fill="#2ea043"/>
+  <circle cx="620" cy="230" r="30" fill="#238636"/>
+
+  <!-- XP -->
+  <text
+    x="450"
+    y="415"
+    text-anchor="middle"
+    fill="#8b949e"
+    font-size="18"
+    font-family="Arial"
+  >
+    🌱 Growing through code
+  </text>
+
+</svg>
