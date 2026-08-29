@@ -63,151 +63,170 @@ function createTree(contributions) {
 
   const xp = contributions * 10;
 
-  // Tree growth
-  const trunkHeight = 100 + level * 15;
-  const trunkWidth = 14 + level * 2;
+  let stage;
+  let stageEmoji;
 
-  const leafRadius = 18 + level * 2;
+  if (level <= 2) {
+    stage = "Seedling";
+    stageEmoji = "🌱";
+  } else if (level <= 4) {
+    stage = "Young Tree";
+    stageEmoji = "🌿";
+  } else if (level <= 6) {
+    stage = "Growing Tree";
+    stageEmoji = "🌳";
+  } else if (level <= 8) {
+    stage = "Mature Tree";
+    stageEmoji = "🌳";
+  } else {
+    stage = "Ancient Tree";
+    stageEmoji = "🌲";
+  }
 
-  // More branches as level increases
-  const extraBranches = Math.min(level, 8);
+  let tree = "";
 
-  let branches = "";
-  let leaves = "";
+  // =========================
+  // LEVEL 1-2
+  // =========================
 
-  for (let i = 0; i < extraBranches; i++) {
-    const side = i % 2 === 0 ? -1 : 1;
-
-    const startX = 450 + side * (i * 8);
-    const startY = 260 - i * 20;
-
-    const endX = 450 + side * (100 + i * 15);
-    const endY = startY - 70;
-
-    branches += `
+  if (level <= 2) {
+    tree = `
+      <!-- Small trunk -->
       <path
-        d="M${startX} ${startY}
-           L${endX} ${endY}"
+        d="M450 390 L450 250"
         stroke="#8b5a2b"
-        stroke-width="${Math.max(6, 14 - i)}"
+        stroke-width="14"
         stroke-linecap="round"
       />
-    `;
 
-    leaves += `
-      <circle
-        cx="${endX}"
-        cy="${endY}"
-        r="${leafRadius}"
-        fill="#2ea043"
+      <!-- Small branches -->
+      <path
+        d="M450 300 L400 260"
+        stroke="#8b5a2b"
+        stroke-width="8"
+        stroke-linecap="round"
       />
+
+      <path
+        d="M450 285 L500 245"
+        stroke="#8b5a2b"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+
+      <!-- Leaves -->
+      <circle cx="395" cy="255" r="25" fill="#2ea043"/>
+      <circle cx="505" cy="240" r="25" fill="#238636"/>
+      <circle cx="450" cy="220" r="30" fill="#2ea043"/>
     `;
   }
 
-  return `
-<svg
-  width="900"
-  height="500"
-  viewBox="0 0 900 500"
-  xmlns="http://www.w3.org/2000/svg"
->
+  // =========================
+  // LEVEL 3-4
+  // =========================
 
-  <!-- Background -->
-  <rect
-    width="900"
-    height="500"
-    rx="20"
-    fill="#0d1117"
-  />
+  else if (level <= 4) {
+    tree = `
+      <!-- Trunk -->
+      <path
+        d="M450 390
+           C445 340 450 300 450 230"
+        stroke="#8b5a2b"
+        stroke-width="20"
+        fill="none"
+        stroke-linecap="round"
+      />
 
-  <!-- Title -->
-  <text
-    x="450"
-    y="55"
-    text-anchor="middle"
-    fill="#ffffff"
-    font-size="30"
-    font-family="Arial"
-    font-weight="bold"
-  >
-    Developer Growth
-  </text>
+      <!-- Branches -->
+      <path
+        d="M450 310 L350 235"
+        stroke="#8b5a2b"
+        stroke-width="10"
+        stroke-linecap="round"
+      />
 
-  <!-- Ground -->
-  <path
-    d="M150 405 Q450 375 750 405"
-    stroke="#30363d"
-    stroke-width="5"
-    fill="none"
-  />
+      <path
+        d="M450 285 L550 210"
+        stroke="#8b5a2b"
+        stroke-width="10"
+        stroke-linecap="round"
+      />
 
-  <!-- Main trunk -->
-  <path
-    d="M450 395
-       C440 340 445 280 450 220
-       C455 180 450 140 ${level >= 5 ? "L450 100" : "L450 130"}"
-    stroke="#8b5a2b"
-    stroke-width="${trunkWidth}"
-    fill="none"
-    stroke-linecap="round"
-  />
+      <!-- Leaves -->
+      <circle cx="340" cy="225" r="32" fill="#238636"/>
+      <circle cx="390" cy="190" r="38" fill="#2ea043"/>
+      <circle cx="450" cy="180" r="42" fill="#238636"/>
+      <circle cx="520" cy="175" r="38" fill="#2ea043"/>
+      <circle cx="570" cy="205" r="30" fill="#238636"/>
+    `;
+  }
 
-  <!-- Main branches -->
-  <path
-    d="M450 275 L340 200"
-    stroke="#8b5a2b"
-    stroke-width="14"
-    stroke-linecap="round"
-  />
+  // =========================
+  // LEVEL 5-6
+  // =========================
 
-  <path
-    d="M450 250 L560 175"
-    stroke="#8b5a2b"
-    stroke-width="14"
-    stroke-linecap="round"
-  />
+  else if (level <= 6) {
+    tree = `
+      <!-- Large trunk -->
+      <path
+        d="M450 390
+           C430 330 440 270 450 200
+           C460 160 455 130 450 100"
+        stroke="#8b5a2b"
+        stroke-width="28"
+        fill="none"
+        stroke-linecap="round"
+      />
 
-  ${branches}
+      <!-- Main branches -->
+      <path
+        d="M450 285 L320 185"
+        stroke="#8b5a2b"
+        stroke-width="14"
+        stroke-linecap="round"
+      />
 
-  <!-- Leaves -->
-  <circle cx="330" cy="185" r="${leafRadius}" fill="#238636"/>
-  <circle cx="375" cy="150" r="${leafRadius + 5}" fill="#2ea043"/>
-  <circle cx="425" cy="170" r="${leafRadius}" fill="#238636"/>
+      <path
+        d="M450 260 L580 165"
+        stroke="#8b5a2b"
+        stroke-width="14"
+        stroke-linecap="round"
+      />
 
-  <circle cx="500" cy="145" r="${leafRadius + 5}" fill="#2ea043"/>
-  <circle cx="550" cy="175" r="${leafRadius}" fill="#238636"/>
+      <!-- Leaves -->
+      <circle cx="300" cy="175" r="40" fill="#238636"/>
+      <circle cx="350" cy="135" r="48" fill="#2ea043"/>
+      <circle cx="410" cy="145" r="42" fill="#238636"/>
 
-  ${leaves}
+      <circle cx="490" cy="125" r="48" fill="#2ea043"/>
+      <circle cx="550" cy="140" r="45" fill="#238636"/>
+      <circle cx="610" cy="175" r="35" fill="#2ea043"/>
+    `;
+  }
 
-  <!-- Level -->
-  <text
-    x="450"
-    y="440"
-    text-anchor="middle"
-    fill="#ffffff"
-    font-size="22"
-    font-family="Arial"
-    font-weight="bold"
-  >
-    LEVEL ${level}
-  </text>
+  // =========================
+  // LEVEL 7-8
+  // =========================
 
-  <!-- Stats -->
-  <text
-    x="450"
-    y="470"
-    text-anchor="middle"
-    fill="#8b949e"
-    font-size="16"
-    font-family="Arial"
-  >
-    ${contributions} Contributions • ${xp} XP
-  </text>
+  else if (level <= 8) {
+    tree = `
+      <!-- Massive trunk -->
+      <path
+        d="M450 390
+           C420 320 435 260 450 190
+           C465 140 455 100 450 70"
+        stroke="#8b5a2b"
+        stroke-width="36"
+        fill="none"
+        stroke-linecap="round"
+      />
 
-</svg>
-`;
-}
-
+      <!-- Branches -->
+      <path
+        d="M450 285 L280 170"
+        stroke="#8b5a2b"
+        stroke-width="16"
+        stroke-linecap="round"
 async function main() {
   const contributions = await getContributions();
 
