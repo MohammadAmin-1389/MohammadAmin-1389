@@ -49,14 +49,14 @@
 
 
 
-<h2 align="center">🌳 Developer Growth</h2>
+<!-- <h2 align="center">🌳 Developer Growth</h2>
 
 <p align="center">
   <img
     src="./assets/growth-tree.svg"
     width="800"
   />
-</p>
+</p> -->
 
 
 
