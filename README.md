@@ -8,30 +8,31 @@
 
 ## ⚡ Skills & Technologies
 
-### 🧠 Languages
+<table>
+  <tr>
+    <td align="center">
+      <h3>🧠 Languages</h3>
+      <img src="https://skillicons.dev/icons?i=js,html,css" />
+    </td>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=js,html,css" />
-</p>
+    <td align="center">
+      <h3>⚛️ Frontend</h3>
+      <img src="https://skillicons.dev/icons?i=react,redux,tailwind" />
+    </td>
+  </tr>
 
-### ⚛️ Frontend
+  <tr>
+    <td align="center">
+      <h3>🛠️ Backend</h3>
+      <img src="https://skillicons.dev/icons?i=nodejs,express" />
+    </td>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,redux,tailwind" />
-</p>
-
-### 🛠️ Backend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express" />
-</p>
-
-### 🔧 Tools
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
-</p>
-
+    <td align="center">
+      <h3>🔧 Tools</h3>
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
+    </td>
+  </tr>
+</table>
 
 
 ### 🎯 My Current Stack
@@ -48,15 +49,14 @@
 | 🎨 Figma | ⭐⭐ |
 
 
-
-<!-- <h2 align="center">🌳 Developer Growth</h2>
+ <h2 align="center">🌳 Developer Growth</h2>
 
 <p align="center">
   <img
     src="./assets/growth-tree.svg"
     width="800"
   />
-</p> -->
+</p> 
 
 
 
