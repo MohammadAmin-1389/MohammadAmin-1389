@@ -305,22 +305,72 @@ function createTree(contributions) {
       <circle cx="400" cy="80" r="8" fill="#f2cc60"/>
     `;
   }
-let achievementText = "";
+let achievementItems = "";
 
-achievements.forEach((achievement, index) => {
-  achievementText += `
+if (achievements.includes("🌱 First Commit")) {
+  achievementItems += `
     <text
-      x="40"
-      y="${80 + index * 25}"
-      fill="#ffffff"
-      font-size="14"
-      font-family="Arial"
+      x="450"
+      y="410"
+      text-anchor="middle"
+      font-size="28"
     >
-      ${achievement}
+      🌱
     </text>
   `;
-});
-  
+}
+
+if (achievements.includes("🔥 100 Contributions")) {
+  achievementItems += `
+    <text
+      x="330"
+      y="145"
+      text-anchor="middle"
+      font-size="26"
+    >
+      🔥
+    </text>
+  `;
+}
+
+if (achievements.includes("⚡ 500 Contributions")) {
+  achievementItems += `
+    <text
+      x="570"
+      y="130"
+      text-anchor="middle"
+      font-size="26"
+    >
+      ⚡
+    </text>
+  `;
+}
+
+if (achievements.includes("🏆 1000 Contributions")) {
+  achievementItems += `
+    <text
+      x="450"
+      y="75"
+      text-anchor="middle"
+      font-size="30"
+    >
+      🏆
+    </text>
+  `;
+}
+
+if (achievements.includes("💎 2000 Contributions")) {
+  achievementItems += `
+    <text
+      x="650"
+      y="180"
+      text-anchor="middle"
+      font-size="26"
+    >
+      💎
+    </text>
+  `;
+}
   return `
 <svg
   width="900"
@@ -349,6 +399,7 @@ ${achievementText}
   </text>
 
   ${tree}
+${achievementItems}
 
   <path
     d="M150 405 Q450 375 750 405"
