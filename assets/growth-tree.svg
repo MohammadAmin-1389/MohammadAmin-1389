@@ -13,13 +13,12 @@
   />
 
     <text
-      x="40"
-      y="80"
-      fill="#ffffff"
-      font-size="14"
-      font-family="Arial"
+      x="450"
+      y="410"
+      text-anchor="middle"
+      font-size="28"
     >
-      🌱 First Commit
+      🌱
     </text>
   
   <text
@@ -60,6 +59,16 @@
       <circle cx="505" cy="240" r="25" fill="#238636"/>
       <circle cx="450" cy="220" r="30" fill="#2ea043"/>
     
+
+    <text
+      x="450"
+      y="410"
+      text-anchor="middle"
+      font-size="28"
+    >
+      🌱
+    </text>
+  
 
   <path
     d="M150 405 Q450 375 750 405"
