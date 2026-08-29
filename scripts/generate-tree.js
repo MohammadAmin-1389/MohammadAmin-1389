@@ -385,7 +385,7 @@ if (achievements.includes("💎 2000 Contributions")) {
     rx="20"
     fill="#0d1117"
   />
-${achievementText}
+${achievementItems}
   <text
     x="450"
     y="35"
