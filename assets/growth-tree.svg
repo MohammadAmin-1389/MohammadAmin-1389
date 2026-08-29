@@ -21,7 +21,7 @@
     font-family="Arial"
     font-weight="bold"
   >
-    Developer Growth
+    🌳 Developer Growth
   </text>
 
   <!-- Ground -->
@@ -43,7 +43,7 @@
     stroke-linecap="round"
   />
 
-  <!-- Left branches -->
+  <!-- Branches -->
   <path
     d="M450 250 L340 180"
     stroke="#8b5a2b"
@@ -58,7 +58,6 @@
     stroke-linecap="round"
   />
 
-  <!-- Right branches -->
   <path
     d="M450 230 L560 160"
     stroke="#8b5a2b"
@@ -85,16 +84,17 @@
   <circle cx="280" cy="235" r="30" fill="#2ea043"/>
   <circle cx="620" cy="230" r="30" fill="#238636"/>
 
-  <!-- XP -->
+  <!-- Stats -->
+
   <text
     x="450"
-    y="415"
+    y="395"
     text-anchor="middle"
-    fill="#8b949e"
+    fill="#ffffff"
     font-size="18"
     font-family="Arial"
   >
-    🌱 Growing through code
+    Level 1 • 780 XP • 78 Contributions
   </text>
 
 </svg>
