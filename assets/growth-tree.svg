@@ -12,6 +12,16 @@
     fill="#0d1117"
   />
 
+    <text
+      x="40"
+      y="80"
+      fill="#ffffff"
+      font-size="14"
+      font-family="Arial"
+    >
+      🌱 First Commit
+    </text>
+  
   <text
     x="450"
     y="35"
@@ -78,7 +88,7 @@
     font-size="16"
     font-family="Arial"
   >
-    79 Contributions • 790 XP
+    82 Contributions • 820 XP
   </text>
 
 </svg>
