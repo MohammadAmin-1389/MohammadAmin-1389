@@ -21,6 +21,15 @@
       🌱
     </text>
   
+    <text
+      x="330"
+      y="145"
+      text-anchor="middle"
+      font-size="26"
+    >
+      🔥
+    </text>
+  
   <text
     x="450"
     y="35"
@@ -69,6 +78,15 @@
       🌱
     </text>
   
+    <text
+      x="330"
+      y="145"
+      text-anchor="middle"
+      font-size="26"
+    >
+      🔥
+    </text>
+  
 
   <path
     d="M150 405 Q450 375 750 405"
@@ -86,7 +104,7 @@
     font-family="Arial"
     font-weight="bold"
   >
-    LEVEL 1 • Seedling
+    LEVEL 2 • Seedling
   </text>
 
   <text
@@ -97,7 +115,7 @@
     font-size="16"
     font-family="Arial"
   >
-    99 Contributions • 990 XP
+    100 Contributions • 1000 XP
   </text>
 
 </svg>
